@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <title>Our Story</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+
+    <!-- 01 — Story intro -->
+    <section id="story" class="screen story-screen">
+      <div class="story-progress"><span id="storyProgress"></span></div>
+      <div class="story-copy" aria-live="polite">
+        <p id="storyText"></p>
+      </div>
+
+      <div class="story-controls">
+        <button id="backBtn" class="text-btn" type="button">Back</button>
+        <button id="nextBtn" class="text-btn text-btn-bright" type="button">Next</button>
+      </div>
+
+      <button id="enterBtn" class="enter-btn" type="button" hidden>
+        <span>Enter</span><i>↗</i>
+      </button>
+    </section>
+
+    <!-- 03 — Seven-image showcase -->
+    <section class="gallery-section">
+      <div class="section-intro">
+        <span>01 / 03</span>
+        <h2>Little moments.<br><em>Big memories.</em></h2>
+      </div>
+      <div class="gallery">
+        <figure><img src="assets/image-01.jpeg" alt="Memory 1" loading="lazy"></figure>
+        <figure><img src="assets/image-02.jpeg" alt="Memory 2" loading="lazy"></figure>
+        <figure><img src="assets/image-03.jpeg" alt="Memory 3" loading="lazy"></figure>
+        <figure><img src="assets/image-04.jpeg" alt="Memory 4" loading="lazy"></figure>
+        <figure><img src="assets/image-05.jpeg" alt="Memory 5" loading="lazy"></figure>
+        <figure><img src="assets/image-06.jpeg" alt="Memory 6" loading="lazy"></figure>
+        <figure><img src="assets/image-07.jpeg" alt="Memory 7" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- 04 — Chat screenshots -->
+    <section class="chat-section">
+      <div class="section-intro">
+        <span>02 / 03</span>
+        <h2>Things we<br><em>said.</em></h2>
+      </div>
+      <div class="chat-stack">
+        <figure class="chat-card"><img src="assets/chat-01.jpg" alt="Chat screenshot 1" loading="lazy"></figure>
+        <figure class="chat-card"><img src="assets/chat-02.jpg" alt="Chat screenshot 2" loading="lazy"></figure>
+        <figure class="chat-card"><img src="assets/chat-03.jpg" alt="Chat screenshot 3" loading="lazy"></figure>
+        <figure class="chat-card"><img src="assets/chat-04.jpg" alt="Chat screenshot 4" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- 05 — Second video -->
+    <section class="video-section second-video">
+      <video id="videoTwo" class="fullscreen-video" playsinline preload="metadata">
+        <source src="assets/video-2.mp4" type="video/mp4" />
+      </video>
+      <div class="video-ui">
+        <button class="play-toggle" data-video="videoTwo" aria-label="Play video">
+          <span class="play-icon">▶</span><span class="pause-icon">Ⅱ</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 02 — Hero video -->
+    <section id="heroVideo" class="video-section" hidden>
+      <video id="videoOne" class="fullscreen-video" playsinline preload="metadata">
+        <source src="assets/video-1.mp4" type="video/mp4" />
+      </video>
+      <div class="video-ui">
+        <button class="play-toggle" data-video="videoOne" aria-label="Play video">
+          <span class="play-icon">▶</span><span class="pause-icon">Ⅱ</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 06 — Birthday reveal -->
+    <section class="birthday-section">
+      <div class="birthday-card" id="birthdayCard">
+        <div class="card-front">
+          <span class="eyebrow">03 / 03</span>
+          <h2>One last<br><em>thing.</em></h2>
+          <button id="openBirthday" class="open-btn" type="button">
+            Open
+            <span>+</span>
+          </button>
+        </div>
+        <div class="card-message">
+          <button id="closeBirthday" class="close-btn" type="button" aria-label="Close">×</button>
+          <span class="eyebrow">For you</span>
+          <h2>Happy Birthday.</h2>
+          <p>
+            Another year, another collection of memories.
+            I hope this one gives you more reasons to smile,
+            more moments worth remembering, and everything
+            you quietly wish for.
+          </p>
+          <p class="signature">— With love</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
