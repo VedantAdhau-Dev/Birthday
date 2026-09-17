@@ -490,6 +490,7 @@ video {
   .video-section {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
     min-height: 0;
     aspect-ratio: 16 / 9;
 
